@@ -1,4 +1,5 @@
 .headers on
+PRAGMA threads=4;
 
 SELECT time();
 
