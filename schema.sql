@@ -6,8 +6,6 @@ create table movies(
   genres TEXT);
 
 --userId,movieId,rating,timestamp
---1,2,3.5,1112486027
-
 DROP TABLE IF EXISTS ratings;
 create table ratings(
   userID INTEGER,

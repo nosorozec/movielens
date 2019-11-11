@@ -3,6 +3,7 @@ set +x
 
 DBNAME=movies.db
 SCHEMA=schema.sql
+QUERY=query.sql
 SQLITE3=sqlite3
 
 #DATAFILE="ml-latest-small"
@@ -39,16 +40,4 @@ echo
 
 echo "Selecting Top 15 movies with more than 200 ratings."
 
-time cat <<EOF | sqlite3 movies.db
-.headers on
-EXPLAIN QUERY PLAN
-SELECT
-  m.title AS Title,
-  round(AVG(r.rating),2) AS AvgRating,
-  COUNT(r.rating) AS NumRatings
-FROM movies m JOIN ratings r ON m.movieID=r.movieID
-GROUP BY Title
-HAVING NumRatings > 200
-ORDER BY AvgRating DESC
-LIMIT 15;
-EOF
+time cat $QUERY | $SQLITE3 $DBNAME
