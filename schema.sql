@@ -1,7 +1,7 @@
 -- movieId,title,genres
 DROP TABLE IF EXISTS movies;
 create table movies(
-  movieId INTEGER,
+  movieID INTEGER,
   title TEXT,
   genres TEXT);
 
@@ -10,8 +10,8 @@ create table movies(
 
 DROP TABLE IF EXISTS ratings;
 create table ratings(
-  userId INTEGER,
-  movieId INTEGER,
-  rating INTEGER,
+  userID INTEGER,
+  movieID INTEGER,
+  rating FLOAT,
   rating_date TEXT
 );
