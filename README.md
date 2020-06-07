@@ -8,10 +8,10 @@ DO montau potrzebujemy
 # zewnętrzny dźwięk
 
 # montaz
-1. Dopasowanie audio (jezeli uzywamy osobnego narywania)
-1. Balans bieli
-* narzędzie Auto
-1. Kolorowanie i kontrast
+- Dopasowanie audio (jezeli uzywamy osobnego narywania)
+- Balans bieli
+-- narzędzie Auto
+- Kolorowanie i kontrast
 * GOPRO Flat profile:
 * Exposure: Dodajemy kontrastu: Shadows->down; Highligts->up
 * Saturation: Master +30
